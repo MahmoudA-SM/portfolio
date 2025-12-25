@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --primary-red: #E50914;
+  --background-black: #141414;
+  --gray-dark: #181818;
+  --gray-light: #e5e5e5;
+  --font-main: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-black);
+  color: #fff;
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for clean look */
+::-webkit-scrollbar {
+  display: none;
+}
