@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: "Studify",
     description:
-      "Turn PDFs into smart summaries and visual mind maps for faster studying. Live demo: studifyai.online",
+      "A website that takes lectures and generates study metrial for university students.",
     image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=1000",
     tags: ["Next.js", "TypeScript", "Tailwind", "Markmap", "PDF"],
     link: "https://studifyai.online"
