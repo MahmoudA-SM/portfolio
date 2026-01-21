@@ -11,10 +11,12 @@ const Modal = ({ item, onClose }) => {
         <button className="modal-close" onClick={onClose} aria-label="Close">
           Close
         </button>
-        <div
-          className="modal-hero"
-          style={{ backgroundImage: `url("${item.image}")` }}
-        />
+        {item.title !== 'Studify' && (
+          <div
+            className="modal-hero"
+            style={{ backgroundImage: `url("${item.image}")` }}
+          />
+        )}
         <div className="modal-body">
           {meta && <span className="modal-meta">{meta}</span>}
           <h2 className={item.title === 'Studify' ? 'modal-logo' : undefined}>

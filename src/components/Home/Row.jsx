@@ -40,10 +40,12 @@ const Row = ({ title, eyebrow, items, onItemClick, sectionId }) => {
                 }
               }}
             >
-              <div
-                className="card-media"
-                style={{ backgroundImage: `url("${item.image}")` }}
-              />
+              {item.title !== 'Studify' && (
+                <div
+                  className="card-media"
+                  style={{ backgroundImage: `url("${item.image}")` }}
+                />
+              )}
               <div className="card-body">
                 {meta && <span className="card-meta">{meta}</span>}
                 <h3 className={item.title === 'Studify' ? 'card-logo' : undefined}>

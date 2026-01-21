@@ -81,10 +81,12 @@ const Hero = ({ profile, featured, stats, onMoreInfo }) => {
         </div>
         {featured && (
           <div className="hero-card">
-            <div
-              className="hero-card-media"
-              style={{ backgroundImage: `url("${featured.image}")` }}
-            />
+            {featured.title !== 'Studify' && (
+              <div
+                className="hero-card-media"
+                style={{ backgroundImage: `url("${featured.image}")` }}
+              />
+            )}
             <div className="hero-card-body">
               <p className="hero-card-label">Featured project</p>
               <h3 className={featured.title === 'Studify' ? 'hero-card-logo' : undefined}>
@@ -102,7 +104,7 @@ const Hero = ({ profile, featured, stats, onMoreInfo }) => {
                 </button>
                 {featured.link && (
                   <a
-                    className="secondary ghost"
+                    className="secondary"
                     href={featured.link}
                     target="_blank"
                     rel="noreferrer"
