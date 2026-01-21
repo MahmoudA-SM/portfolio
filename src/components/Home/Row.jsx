@@ -1,67 +1,23 @@
 import React from 'react';
 import './Row.css';
 
-const Row = ({ title, eyebrow, items, onItemClick, sectionId }) => {
-  return (
-    <section className="section reveal" id={sectionId}>
-      <div className="section-header">
-        <div>
-          {eyebrow && <p className="section-eyebrow">{eyebrow}</p>}
-          <h2>{title}</h2>
+const Row = ({ title, items, isLargeRow, onItemClick }) => {
+    return (
+        <div className="row">
+            <h2>{title}</h2>
+            <div className="row-posters">
+                {items.map(item => (
+                    <img
+                        key={item.id}
+                        className={`row-poster ${isLargeRow ? "row-posterLarge" : ""}`}
+                        src={item.image}
+                        alt={item.title}
+                        onClick={() => onItemClick && onItemClick(item)}
+                    />
+                ))}
+            </div>
         </div>
-        <p className="section-subtitle">Click any card to open details.</p>
-      </div>
-      <div className="card-grid">
-        {items.map((item) => {
-          const meta = item.company || item.institution || item.date || item.tags?.[0];
-          return (
-            <article
-              key={item.id}
-              className="card"
-              onClick={() => onItemClick && onItemClick(item)}
-              role="button"
-              tabIndex={0}
-              onMouseMove={(event) => {
-                const rect = event.currentTarget.getBoundingClientRect();
-                const x = event.clientX - rect.left;
-                const y = event.clientY - rect.top;
-                const rotateY = ((x / rect.width) - 0.5) * 14;
-                const rotateX = ((y / rect.height) - 0.5) * -14;
-                event.currentTarget.style.setProperty('--rx', `${rotateX}deg`);
-                event.currentTarget.style.setProperty('--ry', `${rotateY}deg`);
-              }}
-              onMouseLeave={(event) => {
-                event.currentTarget.style.setProperty('--rx', `0deg`);
-                event.currentTarget.style.setProperty('--ry', `0deg`);
-              }}
-              onKeyDown={(event) => {
-                if (event.key === 'Enter') {
-                  onItemClick && onItemClick(item);
-                }
-              }}
-            >
-              <div
-                className="card-media"
-                style={{ backgroundImage: `url("${item.image}")` }}
-              />
-              <div className="card-body">
-                {meta && <span className="card-meta">{meta}</span>}
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                {item.tags && (
-                  <div className="card-tags">
-                    {item.tags.map((tag) => (
-                      <span key={tag} className="tag">{tag}</span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </article>
-          );
-        })}
-      </div>
-    </section>
-  );
+    );
 };
 
 export default Row;

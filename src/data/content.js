@@ -23,7 +23,7 @@ export const projects = [
   {
     id: 4,
     title: "Portfolio Website",
-    description: "Personal portfolio showcasing selected work.",
+    description: "My personal portfolio showcasing my work.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=60",
     tags: ["HTML", "CSS", "JS"]
   }
@@ -37,7 +37,7 @@ export const experience = [
     description:
       "Designed and implemented modules for an ERP system supporting multi-site data sync across locations in Saudi Arabia and Egypt. Built secure client-server services, optimized PostgreSQL queries, and improved uptime to 99.9%.",
     image: "https://images.unsplash.com/photo-1572986338398-7f4fc0ca6a3d?auto=format&fit=crop&q=80&w=1000",
-    date: "Jul 2023 - Dec 2026",
+    date: "Jul 2023 – Dec 2026",
     tags: ["ERP", "PostgreSQL", "Sync", "Linux", "Networking"]
   },
   {
@@ -47,17 +47,17 @@ export const experience = [
     description:
       "Responsible for the infrastructure of their digital transformation. Delivered backend services and data integrations under tight deadlines.",
     image: "https://images.unsplash.com/photo-1556767576-557b8fd0ce90?auto=format&fit=crop&q=80&w=1000",
-    date: "Dec 2025 - Jan 2026",
+    date: "Dec 2025 – Jan 2026",
     tags: ["Backend", "Integration", "APIs"]
   },
   {
     id: 3,
-    title: "Co-founder",
+    title: "Co‑founder",
     company: "MisrCart (MISK backed startup)",
     description:
       "Led product interviews, built proof-of-concept web app, implemented structured data and admin dashboards. Drove user research and MVP iterations.",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
-    date: "Jun 2025 - Sep 2025",
+    date: "Jun 2025 – Sep 2025",
     tags: ["Product", "Web", "Data"]
   },
   {
@@ -67,7 +67,7 @@ export const experience = [
     description:
       "Assisted with labs, graded assignments, and guided students in core Java programming concepts.",
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1000",
-    date: "Sep 2022 - Apr 2023",
+    date: "Sep 2022 – Apr 2023",
     tags: ["Java", "Teaching"]
   },
   {
@@ -77,7 +77,7 @@ export const experience = [
     description:
       "Provided technical support to students and faculty. Troubleshot Linux system issues and campus IT services.",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000",
-    date: "Sep 2022 - May 2023",
+    date: "Sep 2022 – May 2023",
     tags: ["Linux", "Support", "Helpdesk"]
   }
 ];
