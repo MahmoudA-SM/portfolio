@@ -46,8 +46,21 @@ const Row = ({ title, eyebrow, items, onItemClick, sectionId }) => {
               />
               <div className="card-body">
                 {meta && <span className="card-meta">{meta}</span>}
-                <h3>{item.title}</h3>
+                <h3 className={item.title === 'Studify' ? 'card-logo' : undefined}>
+                  {item.title}
+                </h3>
                 <p>{item.description}</p>
+                {item.link && (
+                  <a
+                    className="card-link"
+                    href={item.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={(event) => event.stopPropagation()}
+                  >
+                    Visit site
+                  </a>
+                )}
                 {item.tags && (
                   <div className="card-tags">
                     {item.tags.map((tag) => (

@@ -287,6 +287,23 @@
   font-size: 1.4rem;
 }
 
+.hero-card-body h3.hero-card-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+@media (min-width: 640px) {
+  .hero-card-body h3.hero-card-logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero-card-body h3.hero-card-logo {
+    color: #ffffff;
+  }
+}
 .hero-card-body p {
   color: var(--muted);
 }
@@ -304,6 +321,19 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.hero-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-card-body .secondary.ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid rgba(21, 22, 26, 0.2);
 }
 
 @media (max-width: 900px) {

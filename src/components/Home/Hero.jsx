@@ -87,16 +87,30 @@ const Hero = ({ profile, featured, stats, onMoreInfo }) => {
             />
             <div className="hero-card-body">
               <p className="hero-card-label">Featured project</p>
-              <h3>{featured.title}</h3>
+              <h3 className={featured.title === 'Studify' ? 'hero-card-logo' : undefined}>
+                {featured.title}
+              </h3>
               <p>{featured.description}</p>
               <div className="card-tags">
                 {featured.tags?.map((tag) => (
                   <span key={tag} className="tag">{tag}</span>
                 ))}
               </div>
-              <button className="secondary" onClick={onMoreInfo}>
-                See details
-              </button>
+              <div className="hero-card-actions">
+                <button className="secondary" onClick={onMoreInfo}>
+                  See details
+                </button>
+                {featured.link && (
+                  <a
+                    className="secondary ghost"
+                    href={featured.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Visit site
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         )}

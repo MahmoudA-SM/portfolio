@@ -1,27 +1,36 @@
 export const projects = [
   {
     id: 1,
+    title: "Studify",
+    description:
+      "Turn PDFs into smart summaries and visual mind maps for faster studying. Live demo: studifyai.online",
+    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=1000",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Markmap", "PDF"],
+    link: "https://studifyai.online"
+  },
+  {
+    id: 2,
     title: "Netflix Clone",
     description: "A replica of the Netflix UI built with React.",
     image: "https://images.unsplash.com/photo-1574375927938-d5a98e8efe85?auto=format&fit=crop&q=80&w=1000",
     tags: ["React", "CSS", "Vite"]
   },
   {
-    id: 2,
+    id: 3,
     title: "E-Commerce Platform",
     description: "Full-stack shopping application with cart functionality.",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
     tags: ["Node.js", "MongoDB", "Redux"]
   },
   {
-    id: 3,
+    id: 4,
     title: "Task Dashboard",
     description: "Productivity tool for managing daily tasks.",
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1000",
     tags: ["Vue", "Firebase"]
   },
   {
-    id: 4,
+    id: 5,
     title: "Portfolio Website",
     description: "Personal portfolio showcasing selected work.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=60",

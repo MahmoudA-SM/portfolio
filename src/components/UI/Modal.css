@@ -64,9 +64,43 @@
   font-size: 2rem;
 }
 
+.modal-body h2.modal-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+@media (min-width: 640px) {
+  .modal-body h2.modal-logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .modal-body h2.modal-logo {
+    color: #ffffff;
+  }
+}
+
 .modal-description {
   color: var(--muted);
   line-height: 1.7;
+}
+
+.modal-link {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
 .modal-tags {

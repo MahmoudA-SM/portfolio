@@ -17,8 +17,20 @@ const Modal = ({ item, onClose }) => {
         />
         <div className="modal-body">
           {meta && <span className="modal-meta">{meta}</span>}
-          <h2>{item.title}</h2>
+          <h2 className={item.title === 'Studify' ? 'modal-logo' : undefined}>
+            {item.title}
+          </h2>
           <p className="modal-description">{item.description}</p>
+          {item.link && (
+            <a
+              className="modal-link"
+              href={item.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit studifyai.online
+            </a>
+          )}
           {item.tags && (
             <div className="modal-tags">
               {item.tags.map((tag) => (
