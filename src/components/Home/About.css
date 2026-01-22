@@ -58,13 +58,13 @@
 
 .about-actions {
   display: flex;
+  flex-direction: column;
   gap: 12px;
-  flex-wrap: wrap;
 }
 
 .about-actions a {
   border: 1px solid rgba(14, 165, 233, 0.3);
-  padding: 10px;
+  padding: 10px 14px;
   border-radius: 12px;
   font-weight: 600;
   font-size: 0.85rem;
@@ -72,9 +72,10 @@
   letter-spacing: 0.08em;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  min-height: 42px;
   color: var(--ink);
   background: rgba(255, 255, 255, 0.7);
 }
@@ -87,6 +88,12 @@
 .about-actions svg {
   width: 20px;
   height: 20px;
+}
+
+.about-link-label {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
 }
 
 @media (max-width: 900px) {
