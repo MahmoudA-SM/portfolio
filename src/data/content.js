@@ -4,38 +4,25 @@ export const projects = [
     title: "Studify",
     description:
       "A website that takes lectures and generates study metrial for university students.",
-    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=1000",
     tags: ["Next.js", "TypeScript", "Tailwind", "Markmap", "PDF"],
     link: "https://studifyai.online"
   },
   {
     id: 2,
-    title: "Netflix Clone",
-    description: "A replica of the Netflix UI built with React.",
-    image: "https://images.unsplash.com/photo-1574375927938-d5a98e8efe85?auto=format&fit=crop&q=80&w=1000",
-    tags: ["React", "CSS", "Vite"]
+    title: "Intellicore.online",
+    description:
+      "Web app for managing food distribution store records with full CRUD workflows, validation, and a clean, operator-friendly interface.",
+    tags: ["Python", "Web App", "CRUD", "Validation"],
+    link: "https://intellicore.online"
   },
   {
     id: 3,
-    title: "E-Commerce Platform",
-    description: "Full-stack shopping application with cart functionality.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
-    tags: ["Node.js", "MongoDB", "Redux"]
+    title: "Trichology Demo",
+    description:
+      "Premium, dark-themed Next.js marketing site prototype with modal CTAs, anchor-based sections, and a dedicated contact page.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Shadcn UI", "Radix UI"],
+    link: "https://trichology-demo.vercel.app/"
   },
-  {
-    id: 4,
-    title: "Task Dashboard",
-    description: "Productivity tool for managing daily tasks.",
-    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1000",
-    tags: ["Vue", "Firebase"]
-  },
-  {
-    id: 5,
-    title: "Portfolio Website",
-    description: "Personal portfolio showcasing selected work.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=60",
-    tags: ["HTML", "CSS", "JS"]
-  }
 ];
 
 export const experience = [
@@ -104,6 +91,7 @@ export const education = [
 
 export const profile = {
   name: "Mahmoud Moustafa",
+  profileImage: "/profile.jpg",
   birthDate: "2000-07-30",
   locations: ["Giza, Egypt", "Riyadh, Saudi Arabia"],
   availability: "Working across Giza and Riyadh; onsite or remote in either location.",

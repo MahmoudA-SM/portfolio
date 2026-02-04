@@ -11,7 +11,7 @@ const Modal = ({ item, onClose }) => {
         <button className="modal-close" onClick={onClose} aria-label="Close">
           Close
         </button>
-        {item.title !== 'Studify' && (
+        {item.image && (
           <div
             className="modal-hero"
             style={{ backgroundImage: `url("${item.image}")` }}
@@ -19,7 +19,7 @@ const Modal = ({ item, onClose }) => {
         )}
         <div className="modal-body">
           {meta && <span className="modal-meta">{meta}</span>}
-          <h2 className={item.title === 'Studify' ? 'modal-logo' : undefined}>
+          <h2 className={!item.image ? 'modal-logo' : undefined}>
             {item.title}
           </h2>
           <p className="modal-description">{item.description}</p>

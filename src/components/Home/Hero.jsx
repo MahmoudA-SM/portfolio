@@ -80,8 +80,8 @@ const Hero = ({ profile, featured, stats, onMoreInfo }) => {
           </div>
         </div>
         {featured && (
-          <div className="hero-card">
-            {featured.title !== 'Studify' && (
+          <div className={`hero-card${featured.image ? '' : ' hero-card--no-media'}`}>
+            {featured.image && (
               <div
                 className="hero-card-media"
                 style={{ backgroundImage: `url("${featured.image}")` }}
@@ -89,7 +89,7 @@ const Hero = ({ profile, featured, stats, onMoreInfo }) => {
             )}
             <div className="hero-card-body">
               <p className="hero-card-label">Featured project</p>
-              <h3 className={featured.title === 'Studify' ? 'hero-card-logo' : undefined}>
+              <h3 className={!featured.image ? 'hero-card-logo' : undefined}>
                 {featured.title}
               </h3>
               <p>{featured.description}</p>

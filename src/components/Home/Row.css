@@ -125,6 +125,7 @@
 .card-body h3 {
   font-size: 1.2rem;
   text-transform: uppercase;
+  color: var(--ink);
 }
 
 .card-body h3.card-logo {
@@ -148,6 +149,11 @@
 .card-body p {
   color: var(--muted);
   line-height: 1.6;
+}
+
+.card--no-media .card-body h3 {
+  color: #0b0f1a;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .card-tags {

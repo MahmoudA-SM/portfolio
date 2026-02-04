@@ -290,7 +290,8 @@
 .hero-card-body h3.hero-card-logo {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #111827;
+  color: #0b0f1a;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 @media (min-width: 640px) {
@@ -301,11 +302,28 @@
 
 @media (prefers-color-scheme: dark) {
   .hero-card-body h3.hero-card-logo {
-    color: #ffffff;
+    color: #0b0f1a;
   }
 }
 .hero-card-body p {
   color: var(--muted);
+}
+
+.hero-card--no-media .hero-card-label {
+  color: #0b0f1a;
+}
+
+.hero-card--no-media .hero-card-body p {
+  color: #1f2937;
+}
+
+.hero-card--no-media .hero-card-body h3.hero-card-logo {
+  color: #0b0f1a;
+}
+
+.hero-card--no-media .tag {
+  color: #0b0f1a;
+  border-color: rgba(14, 165, 233, 0.35);
 }
 
 .hero-card-body .secondary {

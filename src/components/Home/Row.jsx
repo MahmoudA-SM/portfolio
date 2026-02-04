@@ -17,7 +17,7 @@ const Row = ({ title, eyebrow, items, onItemClick, sectionId }) => {
           return (
             <article
               key={item.id}
-              className="card"
+              className={`card${item.image ? '' : ' card--no-media'}`}
               onClick={() => onItemClick && onItemClick(item)}
               role="button"
               tabIndex={0}
@@ -40,7 +40,7 @@ const Row = ({ title, eyebrow, items, onItemClick, sectionId }) => {
                 }
               }}
             >
-              {item.title !== 'Studify' && (
+              {item.image && (
                 <div
                   className="card-media"
                   style={{ backgroundImage: `url("${item.image}")` }}
@@ -48,7 +48,7 @@ const Row = ({ title, eyebrow, items, onItemClick, sectionId }) => {
               )}
               <div className="card-body">
                 {meta && <span className="card-meta">{meta}</span>}
-                <h3 className={item.title === 'Studify' ? 'card-logo' : undefined}>
+                <h3 className={!item.image ? 'card-logo' : undefined}>
                   {item.title}
                 </h3>
                 <p>{item.description}</p>
